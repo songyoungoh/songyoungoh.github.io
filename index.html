@@ -21,9 +21,14 @@
             font-size: 32px; /* Slightly smaller font size for name */
         }
 
-        h2, h3 {
+        h2 {
             color: #666; /* Light gray font color for subtitles */
-            font-size: 16px; /* Smaller font size for subtitles */
+            font-size: 20px; /* Bigger font size for the first subtitle */
+        }
+
+        h3 {
+            color: #666; /* Light gray font color for subtitles */
+            font-size: 16px; /* Smaller font size for the second subtitle */
             font-style: italic; /* Italic font style for subtitles */
         }
 
@@ -31,7 +36,7 @@
             color: #333; /* Dark gray font color */
             font-size: 20px; /* Larger font size for paragraph */
             text-align: justify;
-            margin: 0 20px;
+            margin: 10px 20px; /* Added space between the second subtitle and the paragraph */
         }
 
         nav {
@@ -42,7 +47,7 @@
 
         nav a {
             text-decoration: none;
-            color: black; /* Black font color for menus */
+            color: skyblue; /* Skyblue font color for menus */
             padding: 10px 20px;
             font-weight: bold; /* Bold font for menu items */
             font-size: 24px; /* Bigger font size for menu items */
@@ -86,25 +91,33 @@
 
 <body>
     <nav>
+        <a href="#">Home</a>
         <a href="#CV">CV</a>
-        <a href="#Projects">Projects</a>
+        <a href="#Research">Research</a>
+        <a href="#Publications">Publications</a>
+        <a href="#">Everything Else</a>
     </nav>
 
     <div class="content">
         <div class="profile">
             <img src="https://datascience.duke.edu/wp-content/uploads/2022/08/Song-Young-Oh-400x400.jpg" alt="Profile Photo" />
             <div class="icons">
-                <a href="mailto:songyoung.oh@duke.edu"><img src="email_icon.png" alt="Email" style="width: 24px; height: 24px;"> Email</a>
-                <a href="https://datascience.duke.edu/people/song-young-oh/"><img src="profile_icon.jpeg" alt="Duke Profile" style="width: 24px; height: 24px;"> Duke Profile</a>
-                <a href="https://www.linkedin.com/in/song-young-oh/"><img src="linkedin_icon.png" alt="LinkedIn" style="width: 24px; height: 24px;"> LinkedIn</a>
+                <a href="mailto:songyoung.oh@duke.edu"><img src="email_icon.png" alt="Email" style="width: 50px; height: 50px;"></a>
+                <a href="https://datascience.duke.edu/people/song-young-oh/"><img src="profile_icon.jpeg" alt="Duke Profile" style="width: 50px; height: 50px;"></a>
+                <a href="https://www.linkedin.com/in/song-young-oh/"><img src="linkedin_icon.png" alt="LinkedIn" style="width: 50px; height: 50px;"></a>
             </div>
         </div>
         <div class="info">
             <h1>Song Young Oh</h1>
-            <h2>Second-Year Master's Student in Interdisciplinary Data Science</h2>
+            <h2>Second-Year Master's Student in Interdisciplinary Data Science at Duke University</h2>
             <h3>songyoung.oh {at} duke.edu</h3>
             <p>
                 I am completing my degree in interdisciplinary data science at Duke University. My research interests lie at the intersection of data visualization and human-computer interaction, exploring how we perceive visual data and translate this perception into actionable insights. I am also interested in examining the symbiotic relationship between humans and artificial intelligence, harnessing their combined potential to decode complex datasets and design interactive visualization systems. My aim is to develop visual analytic tools that seamlessly integrate human expertise and machine capabilities for enhanced transparency and user-friendliness in computational processes.
+            </p>
+            <p>
+                You can pronounce my first name as Song.
+                <br>
+                <img src="song_icon.png" alt="Song Icon" style="width: 100px; height: 100px;">
             </p>
         </div>
     </div>
