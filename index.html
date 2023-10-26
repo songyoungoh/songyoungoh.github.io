@@ -7,66 +7,58 @@
             font-family: 'Arial', sans-serif;
             display: flex;
             align-items: center;
-            justify-content: center;
             flex-direction: column;
             text-align: center;
             background-color: white;
             color: #333; /* Dark gray font color */
             margin: 0;
             padding: 0;
+            line-height: 1.6; /* Increased line spacing for better readability */
         }
 
         h1 {
-            color: #333; /* Dark gray font color */
-            font-size: 48px; /* Larger font size for name */
-            font-weight: bold;
+            color: darkblue; /* Dark blue font color */
+            font-size: 28px; /* Slightly smaller font size for name */
+            margin: 0; /* Remove margin for name */
         }
 
-        h2 {
+        h2, h3 {
             color: #333; /* Dark gray font color */
-            font-size: 18px; /* Smaller and italic font size for subtitle */
-            font-style: italic;
-        }
-
-        h3 {
-            color: #333; /* Dark gray font color */
-            font-size: 16px; /* Smaller font size for second subtitle */
+            font-size: 16px; /* Smaller font size for subtitles */
+            font-style: italic; /* Italic font style for subtitles */
         }
 
         p {
             color: #333; /* Dark gray font color */
-            font-size: 20px; /* Larger font size for paragraph */
+            font-size: 18px; /* Larger font size for paragraph */
             text-align: justify;
             margin: 0 20px;
         }
 
         nav {
-            background-color: #333;
-            color: #fff;
+            background-color: white;
             text-align: center;
-            font-size: 36px; /* Larger font size for menus */
         }
 
         nav a {
             text-decoration: none;
-            color: #fff;
+            color: lightblue; /* Light blue font color for menus */
             padding: 10px 20px;
+            font-weight: bold; /* Bold font for menu items */
+            font-size: 20px; /* Bigger font size for menu items */
         }
 
         img {
-            max-width: 200px;
+            max-width: 150px;
             height: auto;
         }
 
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
             padding: 20px;
-        }
-
-        .icon {
-            font-size: 36px; /* Larger font size for icons */
-            color: #333; /* Dark gray font color */
-            margin: 10px;
-            text-decoration: none;
         }
     </style>
 </head>
@@ -78,17 +70,16 @@
     </nav>
 
     <div class="content">
+        <div>
+            <h1>Song Young Oh</h1>
+            <h2>Second-Year Master's Student in Interdisciplinary Data Science at Duke</h2>
+            <h3>songyoung.oh {at} duke.edu</h3>
+        </div>
         <img src="https://datascience.duke.edu/wp-content/uploads/2022/08/Song-Young-Oh-400x400.jpg" />
-        <h1>Song Young Oh</h1>
-        <h2>Second-Year Master's Student in Interdisciplinary Data Science at Duke University</h2>
-        <h3>songyoung.oh {at} duke.edu</h3>
-        <p>
-            I am completing my degree in interdisciplinary data science at Duke University. My research interests lie at the intersection of data visualization and human-computer interaction, exploring how we perceive visual data and translate this perception into actionable insights. I am interested in examining the symbiotic relationship between humans and artificial intelligence, harnessing their combined potential to decode complex datasets and design interactive visualization systems. My aim is to develop visual analytic tools that seamlessly integrate human expertise and machine capabilities for enhanced transparency and user-friendliness in computational processes.
-        </p>
-        <a href="mailto:songyoung.oh@duke.edu" class="icon">✉</a>
-        <a href="https://datascience.duke.edu/people/song-young-oh/" class="icon">🎓</a>
-        <a href="https://www.linkedin.com/in/song-young-oh/" class="icon">LinkedIn</a>
     </div>
+    <p>
+        I am completing my degree in interdisciplinary data science at Duke University. My research interests lie at the intersection of data visualization and human-computer interaction, exploring how we perceive visual data and translate this perception into actionable insights. I am interested in examining the symbiotic relationship between humans and artificial intelligence, harnessing their combined potential to decode complex datasets and design interactive visualization systems. My aim is to develop visual analytic tools that seamlessly integrate human expertise and machine capabilities for enhanced transparency and user-friendliness in computational processes.
+    </p>
 </body>
 
 </html>
