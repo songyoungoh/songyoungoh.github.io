@@ -76,13 +76,23 @@
 
         .icons {
             display: flex;
+            flex-direction: column;
             align-items: center;
             font-size: 18px;
             color: #666;
+            margin-top: 10px;
         }
 
-        .icons a {
-            margin: 5px 10px;
+        .icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5px 0;
+}
+
+        .icon a {
+            text-decoration: none;
+            color: #666;
         }
         
         a:hover, a:visited {
@@ -108,11 +118,26 @@
         <div class="profile">
             <img src="https://datascience.duke.edu/wp-content/uploads/2022/08/Song-Young-Oh-400x400.jpg" alt="Profile Photo" />
             <div class="icons">
-                <a href="mailto:songyoung.oh@duke.edu"><img src="email_icon.png" alt="Email" style="width: 30px; height: 30px;">Email</a>
-                <a href="https://datascience.duke.edu/people/song-young-oh/"><img src="profile_icon.jpeg" alt="Duke Profile" style="width: 30px; height: 30px;">Duke Profile</a>
-                <a href="https://www.linkedin.com/in/song-young-oh/"><img src="linkedin_icon.png" alt="LinkedIn" style="width: 30px; height: 30px;">LinkedIn</a>
-            </div>
-        </div>
+                <div class="icon">
+        <a href="mailto:songyoung.oh@duke.edu">
+            <img src="email_icon.png" alt="Email" style="width: 30px; height: 30px;">
+            Email
+        </a>
+    </div>
+    <div class="icon">
+        <a href="https://datascience.duke.edu/people/song-young-oh/">
+            <img src="profile_icon.jpeg" alt="Duke Profile" style="width: 30px; height: 30px;">
+            Duke Profile
+        </a>
+    </div>
+    <div class="icon">
+        <a href="https://www.linkedin.com/in/song-young-oh/">
+            <img src="linkedin_icon.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+            LinkedIn
+        </a>
+    </div>
+</div>
+        
         <div class="info">
             <h1>Song Young Oh</h1>
             <h2>Second-Year Master's Student in Interdisciplinary Data Science</h2>
