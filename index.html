@@ -62,6 +62,7 @@
 
         .profile {
             display: flex;
+            flex-direction: column;
             align-items: center;
         }
 
@@ -69,31 +70,34 @@
             max-width: 200px;
             height: auto;
             display: block;
-            margin: 0 20px 0 0;
         }
 
         .icons {
             display: flex;
-            flex-direction: column;
             align-items: center;
-            font-size: 18px;
-            color: #666;
+            margin-top: 20px;
         }
 
         .icon {
-            margin-left: 20px;
+            margin: 0 20px;
+            text-align: center;
         }
 
         .icons a {
-            margin: 5px 0;
+            text-decoration: none;
+            color: #666;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .icons img {
-            margin-right: 10px;
+            margin: 0 0 10px;
+            width: 30px;
+            height: 30px;
         }
 
-        a:hover,
-        a:visited {
+        a:hover, a:visited {
             text-decoration: none;
         }
 
@@ -118,17 +122,20 @@
             <div class="icons">
                 <div class="icon">
                     <a href="mailto:songyoung.oh@duke.edu">
-                        <img src="email_icon.png" alt="Email" style="width: 30px; height: 30px;"> Email
+                        <img src="email_icon.png" alt="Email">
+                        Email
                     </a>
                 </div>
                 <div class="icon">
                     <a href="https://datascience.duke.edu/people/song-young-oh/">
-                        <img src="profile_icon.jpeg" alt="Duke Profile" style="width: 30px; height: 30px;"> Duke Profile
+                        <img src="profile_icon.jpeg" alt="Duke Profile">
+                        Duke Profile
                     </a>
                 </div>
                 <div class="icon">
                     <a href="https://www.linkedin.com/in/song-young-oh/">
-                        <img src="linkedin_icon.png" alt="LinkedIn" style="width: 30px; height: 30px;"> LinkedIn
+                        <img src="linkedin_icon.png" alt="LinkedIn">
+                        LinkedIn
                     </a>
                 </div>
             </div>
