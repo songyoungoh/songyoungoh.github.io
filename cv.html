@@ -77,9 +77,20 @@
     <br>
 
     <object data="Song Young Oh - CV.pdf" type="application/pdf" width="100%" height="800px">
-        <p>If you are unable to view the PDF, you can <a href="Song Young Oh - CV.pdf" target="_blank">download it here</a>.</p>
+        <p id="downloadLink" style="cursor:pointer; text-decoration:none; color:blue;">Download CV</p>
         <embed src="Song Young Oh - CV.pdf" type="application/pdf" width="100%" height="800px" />
     </object>
+
+    <script>
+        document.getElementById('downloadLink').addEventListener('click', function() {
+            var link = document.createElement('a');
+            link.href = 'Song Young Oh - CV.pdf';
+            link.download = 'Song Young Oh - CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
+    </script>
 </body>
 
 </html>
